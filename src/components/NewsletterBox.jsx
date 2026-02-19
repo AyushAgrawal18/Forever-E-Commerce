@@ -1,10 +1,9 @@
 import React from "react";
 
-const NewsLetterBox = () => {
-
-    const onSubmitHandler = (event) => {
-        event.preventDefault();
-    }
+const NewsletterBox = () => {
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+  };
 
   return (
     <div className="text-center">
@@ -15,7 +14,10 @@ const NewsLetterBox = () => {
         Don't miss out on the chance to save big on your favorite products. Sign
         up now and be the first to know about our exciting deals!
       </p>
-      <form onSubmit={onSubmitHandler} className="w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3 ">
+      <form
+        onSubmit={onSubmitHandler}
+        className="w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3 "
+      >
         <input
           type="email"
           placeholder="Enter your email"
@@ -33,4 +35,4 @@ const NewsLetterBox = () => {
   );
 };
 
-export default NewsLetterBox;
+export default NewsletterBox;
